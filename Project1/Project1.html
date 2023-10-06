@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html lang = "hu">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Órarend</title>
+    <link rel = "stylesheet" href = "p1.css">
+</head>
+
+<body class = "light-mode">
+
+    <div class = "body">
+
+    <div class = "header">
+
+        <div>Órarend</div>
+
+    </div>
+    
+    <div class = "container">
+
+        <div>
+            <div id = "day">Hétfő</div>
+
+            <div id = "de">08:00-08:45 Informatika</div>
+            <div id = "de">08:55-09:40 Informatika</div>
+            <div id = "de">09:55-10:40 Angol</div>
+            <div id = "de">10:50-11:35 Nyelvtan</div>
+            <div id = "de">11:45-12:30 Irodalom</div>
+            <div id = "du">12:45-13:30 Történelem</div>
+            <div id = "du">13:40-14:25 Testnevelés</div>
+            <div id = "du">14:30-15:15 Testnevelés</div>
+        </div>
+
+        <div>
+            <div id = "day">Kedd</div>
+
+            <div id = "de">08:55-09:40 Matematika</div>
+            <div id = "de">09:55-10:40 Szakmai angol</div>
+            <div id = "de">10:50-11:35 Angol</div>
+            <div id = "de">11:45-12:30 Informatika</div>
+            <div id = "du">12:45-13:30 Történelem</div>
+            <div id = "du">13:40-14:25 Irodalom</div>
+            <div id = "du">14:30-15:15 Osztályfőnöki</div>
+            <div id = "spec">15:20-16:00 Tánc</div>
+        </div>
+
+        <div>
+            <div id = "day">Szerda</div>
+
+            <div id = "de">09:55-10:40 Történelem</div>
+            <div id = "de">10:50-11:35 Szakmai angol</div>
+            <div id = "de">11:45-12:30 Angol</div>
+            <div id = "du">12:45-13:30 Matematika</div>
+            <div id = "spec">17:30-18:15 Érettségi felkészítő</div>
+        </div>
+
+        <div>
+            <div id = "day">Csütörtök</div>
+
+            <div id = "de">08:55-09:40 Irodalom</div>
+            <div id = "de">09:55-10:40 Történelem</div>
+            <div id = "de">10:50-11:35 Állampolgári ismeretek</div>
+            <div id = "de">11:45-12:30 Informatika</div>
+            <div id = "du">12:45-13:30 Matematika</div>
+            <div id = "spec">15:20-16:00 Informatika</div>
+            <div id = "spec">16:05-16:45 Informatika</div>
+        </div>
+
+        <div>
+            <div id = "day">Péntek</div>
+
+            <div id = "de">08:00-08:45 Szakmai angol</div>
+            <div id = "de">08:55-09:40 Informatika</div>
+            <div id = "de">09:55-10:40 Informatika</div>
+            <div id = "de">10:50-11:35 Informatika</div>
+            <div id = "de">11:45-12:30 Matematika</div>
+            <div id = "du">12:45-13:30 Informatika</div>
+            <div id = "du">13:40-14:25 Informatika</div>
+            <div id = "du">14:30-15:15 Testnevelés</div>
+        </div>
+
+    </div>
+
+    <div class = "container2">
+
+        <div>
+            <div id = "day">Szombat</div>
+
+            <div id = "de">08:30 Funkcionális köredzés</div>
+            <div id = "de">09:30 SpinRacing EXTRÁKKAL</div>
+            <div id = "spec">11:00 Szétnyílt hasizom tréning</div>
+            <div id = "du">16:00 PILATES</div>
+            <div id = "du">17:00 Has-láb-popsi</div>
+            <div id = "du">18:00 Jóga</div>
+        </div>
+
+        <div>
+            <div id = "day">Vasárnap</div>
+            
+            <div id = "de">10:00 BALANCE</div>
+            <div id = "du">16:30 SpinRacing</div>
+            <div id = "du">17:30 Zsírégető FitBody</div>
+            <div id = "du">18:30 Táncos alakformáló</div>
+        </div>
+
+    </div>
+
+    <div class = "footer">
+
+        <div>
+            <div><button onclick = "darkMode()" id = "dark">Sötét mód</button></div>
+        </div>
+
+        <div>
+            <div><button onclick = "lightMode()" id = "light">Világos mód</button></div>
+        </div>
+        
+    </div>
+
+    </div>
+
+    <script>
+
+        function darkMode() {
+
+            let element = document.body;
+            element.className = "dark-mode";
+            let head = document.querySelector('.header');
+            head.className = "head-dark";
+
+            for (let i = 0; i < 7; i++) {
+                let day = document.querySelector('.day')
+                day.className = "day-dark";
+            }
+            for (let i = 0; i < 2; i++) {
+                let spec = document.querySelector('.spec')
+                spec.className = "spec-dark";
+            }
+            for (let i = 0; i < 14; i++) {
+                let de = document.querySelector('.de')
+                de.className = "de-dark";
+            }
+            for (let i = 0; i < 27; i++) {
+                let du = document.querySelector('.du')
+                du.className = "du-dark";
+            }
+        }
+
+        function lightMode() {
+
+            let element = document.body;
+            element.className = "light-mode";
+            let head = document.querySelector('.head-dark');
+            head.className = "header";
+
+            for (let i = 0; i < 7; i++) {
+                let day = document.querySelector('.day-dark')
+                day.className = "day";
+            }
+            for (let i = 0; i < 2; i++) {
+                let spec = document.querySelector('.spec-dark')
+                spec.className = "spec";
+            }
+            for (let i = 0; i < 14; i++) {
+                let de = document.querySelector('.de-dark')
+                de.className = "de";
+            }
+            for(let i = 0; i < 27; i++) {
+                let du = document.querySelector('.du-dark')
+                du.className = "du";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

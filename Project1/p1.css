@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+body {
+    background-size: cover;
+}
+
+.body {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    margin-left: 75px;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    background-color: #6494a0;
+    height: 100px;
+    width: 1410px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-large;
+    margin: 20px 0px 15px 145px;
+    border: whitesmoke 2px solid;
+    border-radius: 10px;
+    box-shadow: 3px 5px 13px black;
+    text-shadow: 2px 2px 8px black;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 150px;
+    flex-wrap: wrap;
+}
+
+#day {
+    display: flex;
+    background-color: #6494a0;
+    margin-top: 10px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 3px 5px 13px black;
+}
+
+#de {
+    background-color: #695D85;
+    margin-top: 10px;
+    margin-right: 70px;
+    font-size: large;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 13px black;
+}
+
+#du {
+    background-color: #0359AE;
+    margin-top: 10px;
+    margin-right: 70px;
+    font-size: large;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 13px black;
+}
+
+#spec {
+    background-color: #778bce;
+    margin-top: 10px;
+    margin-right: 70px;
+    font-size: large;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 13px black;
+}
+
+.light-mode {
+    background-image: URL(hatter-light.jpg);
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px black;
+    border-color: whitesmoke;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    height: 25px;
+    background-color: #6494a0;
+    font-size: larger;
+    box-shadow: 3px 5px 13px black;
+}
+
+#light {
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px black;
+    border: whitesmoke 2px solid;
+}
+
+#light:hover {
+    color: black;
+    text-shadow: 2px 2px 8px whitesmoke;
+    border: black 2px solid;
+}
+
+#dark:hover {
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px black;
+    border: whitesmoke 2px solid;
+}
+
+#dark {
+    text-shadow: 2px 2px 8px whitesmoke;
+    border: black 2px solid;
+}
+
+.footer {
+    margin-top: 30px;
+    margin-left: 145px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#day:hover, #de:hover, #du:hover, #spec:hover, .header:hover, .head-dark:hover {
+    color: rgb(50, 248, 255);
+    border-color: rgb(50, 248, 255);
+}
+
+.head-dark {
+    display: flex;
+    background-color: #6494a0;
+    height: 100px;
+    width: 1410px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-large;
+    margin: 20px 0px 15px 145px;
+    border: black 2px solid;
+    border-radius: 10px;
+    box-shadow: 3px 5px 13px black;
+    text-shadow: 2px 2px 8px whitesmoke;
+}
+
+#day-dark {
+    display: flex;
+    background-color: #6494a0;
+    margin-top: 10px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 3px 5px 13px black;
+    text-shadow: 2px 2px 8px whitesmoke;
+}
+
+#de-dark {
+    background-color: #695D85;
+    margin-top: 10px;
+    margin-right: 70px;
+    font-size: large;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 13px black;
+    text-shadow: 2px 2px 8px whitesmoke;
+}
+
+#du-dark {
+    background-color: #0359AE;
+    margin-top: 10px;
+    margin-right: 70px;
+    font-size: large;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 13px black;
+    text-shadow: 2px 2px 8px whitesmoke;
+}
+
+#spec-dark {
+    background-color: #778bce;
+    margin-top: 10px;
+    margin-right: 70px;
+    font-size: large;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 13px black;
+    text-shadow: 2px 2px 8px whitesmoke;
+}
+
+.dark-mode {
+    background-image: URL(hatter-dark.jpg);
+    color: black; 
+    text-shadow: 2px 2px 8px whitesmoke;
+    border-color: black;
+}
+
+@media screen and (max-width: 992px) {
+    .header, .head-dark, #light, #dark, #day, #de, #du, #spec {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header, .head-dark, #light, #dark, #day, #de, #du, #spec {
+      width: 100%;
+    }
+}
